@@ -1,0 +1,92 @@
+/* Reinicio básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y fuente general */
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic; 
+    background-color: #f4f4f4;
+    color: #000000;
+    background-image: url('barberia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Encabezado */
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Título principal */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 10px;
+}
+
+/* Íconos del menú */
+nav ul li a img {
+    transition: transform 0.3s ease;
+    animation: vibrar 5s infinite;
+}
+
+nav ul li a img:hover {
+    transform: scale(1.2);
+}
+
+nav ul li:nth-child(1) a img {
+    animation-delay: 0s;
+}
+
+nav ul li:nth-child(2) a img {
+    animation-delay: 2.5s;
+}
+
+/* Sección principal */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 20px;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes vibrar {
+    0% { transform: translate(0); }
+    2% { transform: translate(-1px, 1px); }
+    4% { transform: translate(-1px, -1px); }
+    6% { transform: translate(1px, 1px); }
+    8% { transform: translate(1px, -1px); }
+    10% { transform: translate(0); }
+    100% { transform: translate(0); }
+}

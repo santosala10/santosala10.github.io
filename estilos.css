@@ -1,0 +1,32 @@
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #map {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(28, 21, 21, 0.1);
+            text-align: center;
+        }
+
+        #map h1 {
+            margin-bottom: 20px;
+            color: #161212;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+   
